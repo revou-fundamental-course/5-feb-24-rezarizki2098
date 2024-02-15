@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Website Konversi Suhu</title>
+        <link rel="stylesheet" href="style/style.css" />
+    </head>
+    <body>
+        <header>
+            <h2 class="logo">Logo</h2>
+            <nav class="navigation">
+                <a href="#" id="rumusLink">Rumus</a>
+                <a href="#" id="contactLink">Contact</a>
+            </nav>
+        </header>
+        <div class="wrapper">
+            <div class="form-box input">
+                <h2>Konversi Suhu</h2>
+                <div class="input-box input-celcius">
+                    <span class="icon"><img src="assets/celsius.png" alt="Icon" /></span>
+                    <input class="input-field1" type="text" required />
+                    <label class="celcius">Celcius</label>
+                </div>
+                <div class="button">
+                    <button onclick="konversiSuhu()">Konversi</button>
+                    <button onclick="reset()">Reset</button>
+                    <button onclick="reverse()">Reverse</button>
+                </div>
+                <div class="input-box input-fahrenheit">
+                    <span class="icon"><img src="assets/fahrenheit.png" alt="Icon" /></span>
+                    <input class="input-field2" type="text" required />
+                    <label>Fahrenheit</label>
+                </div>
+            </div>
+        </div>
+        <script src="script/app.js"></script>
+    </body>
+</html>
