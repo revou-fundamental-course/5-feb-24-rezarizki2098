@@ -16,6 +16,16 @@ body {
     background-position: center;
 }
 
+body::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    backdrop-filter: blur(10px); /* Ubah nilai sesuai keinginan */
+  }
+
 header {
     position: fixed;
     top: 0;
@@ -30,14 +40,14 @@ header {
 
 .logo {
     font-size: 2em;
-    color: white;
+    color: #162938;
     user-select: none;
 }
 
 .navigation a {
     position: relative;
     font-size: 1.1em;
-    color: bisque;
+    color: #162938;
     text-decoration: none;
     font-size: 30px;
     text-shadow: 3px 5px 4px rgba(0, 0, 0, 0.5);
@@ -52,7 +62,7 @@ header {
     bottom: -6px;
     width: 100%;
     height: 3px;
-    background: bisque;
+    background: #162938;
     border-radius: 5px;
     transform-origin: right;
     transform: scaleX(0);
